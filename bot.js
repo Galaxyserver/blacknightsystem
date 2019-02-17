@@ -38,7 +38,7 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`Bhelp|DarkNight  .`,'https://www.twitch.tv/v5bz');
+	client.user.setGame(`Bhelp|BlackNight  .`,'https://www.twitch.tv/v5bz');
 });
 
 
@@ -47,7 +47,7 @@ client.on('ready', () => {
 
   client.on("guildMemberAdd", member => {
     member.createDM().then(function (channel) {
-    return channel.send(`**Welcome To Dark Night** :beers: 
+    return channel.send(`**Welcome To Black Night** :beers: 
     **Enjoy** :beers: 
 [ ${member} ]`) 
   }).catch(console.error)
