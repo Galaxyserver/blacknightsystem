@@ -1506,4 +1506,9 @@ message.channel.sendFile(canvas.toBuffer())
 
 })
 
+
+client.on('guildMemberAdd',async m => {
+m.addRole(m.guild.roles.find(r => r.name === ".Black,∝"));
+});
+
         client.login(process.env.BOT_TOKEN);
