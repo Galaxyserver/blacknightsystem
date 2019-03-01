@@ -38,7 +38,7 @@ const prefix = 'R'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`Rhelp|RolletCommunity  .`,'https://www.twitch.tv/v5bz');
+	client.user.setGame(`Rhelp|RolletCommunity.`,'https://www.twitch.tv/v5bz');
 });
 
 
@@ -174,7 +174,7 @@ client.on("ready", () => {
     })
 })
 client.on("guildMemberAdd", (member) => {
-    let channel = member.guild.channels.find('name', "・discord");
+    let channel = member.guild.channels.find('name', "chatt");
     if (!channel) {
         console.log("!channel fails");
         return;
@@ -865,7 +865,7 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
 });
 
 client.on('message', message => {
-  var prefix = "B";
+  var prefix = "R";
   if (message.author.omar) return;
   if (!message.content.startsWith(prefix)) return;
   var command = message.content.split(" ")[0];
@@ -932,7 +932,7 @@ client.on('message',function(message) {
        if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.channel.send(' Error : I Don’t Have `` MANAGE_ROLES ``Permission ');
        if(!muteMember) return message.channel.send(' Error : ``Mention a User``').then(message => message.delete(4000))
        if(!muteReason) return message.channel.send(' Error : ``Supply a Reason``').then(message => message.delete(4000))
-       if(!muteDuration) return message.channel.send(' Error : `` Supply Mute Time `` \n Ex: #mute @DaRKNighT reason 1m ').then(message => message.delete(4000))
+       if(!muteDuration) return message.channel.send(' Error : `` Supply Mute Time `` \n Ex: #mute @Sha Her reason 1m ').then(message => message.delete(4000))
        if(!muteDuration.match(/[1-7][s,m,h,d,w]/g)) return message.channel.send(' Error : `` Invalid Mute Duration``').then(message => message.delete(4000))
        message.channel.send(`${muteMember} Has Been Muted.`).then(message => message.delete(5000))
        muteMember.addRole(muteRole);
@@ -1042,7 +1042,7 @@ client.on("message", message => {
     })
     
 client.on('message', message => {
-var prefix = "B" // برفكس حقك هني
+var prefix = "R" // برفكس حقك هني
            if (message.content.startsWith(prefix + "id")) {
      var args = message.content.split(" ").slice(1);
      let user = message.mentions.users.first();
@@ -1072,7 +1072,7 @@ var prefix = "B" // برفكس حقك هني
 }       });
 
 client.on('message', message => {
-var prefix = "B" // البريفكس
+var prefix = "R" // البريفكس
 if(message.content.startsWith(prefix +"server")){ // الامر
   if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return message.reply(`**هذه الخاصية للادارة فقط** ❎ `)
 if(!message.channel.guild) return message.reply(' ');
