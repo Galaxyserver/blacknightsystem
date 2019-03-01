@@ -34,11 +34,11 @@ const client = new Discord.Client({disableEveryone: true});
 
 const request = require('request');
 
-const prefix = 'B'
+const prefix = 'R'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`Bhelp|BlackNight  .`,'https://www.twitch.tv/v5bz');
+	client.user.setGame(`Rhelp|RolletCommunity  .`,'https://www.twitch.tv/v5bz');
 });
 
 
@@ -47,7 +47,7 @@ client.on('ready', () => {
 
   client.on("guildMemberAdd", member => {
     member.createDM().then(function (channel) {
-    return channel.send(`**Welcome To Black Night** :beers: 
+    return channel.send(`**Welcome To Rollet Community** :beers: 
     **Enjoy** :beers: 
 [ ${member} ]`) 
   }).catch(console.error)
@@ -61,7 +61,7 @@ client.on('ready', () => {
 
       client.on('message',function(message) {
         if (message.author.bot) return;
-      var prefix = "B";
+      var prefix = "R";
                         if(!message.channel.guild) return;
       
                           if (message.content === prefix + "fm") {
@@ -80,7 +80,7 @@ client.on('ready', () => {
             });  
 
      client.on('message', message => {
-                    var prefix = ".";
+                    var prefix = "R";
                            if(message.content === prefix + "mc") {
                                                if(!message.channel.guild) return message.reply('** This command only for servers**');
                     
@@ -1110,35 +1110,35 @@ client.on("message", message => {
          .setFooter('Reqused By : ' + message.author.username, message.author.avatarURL)
 	 .setTimestamp()
          .setDescription(`**• Puplic - عام •
-Bavatar ( صوره الشخصيه )
-Bhelp ( عرض قائمه المساعده )
-Bcount ( لعرض عدد الاعضاء )
-Bid ( عرض معلومات الشخصيه )
-Bfm ( لعرض حالت الاعضاء )
-Bping ( لعرض سرعه النت تبعك )
-Bavatar ( لعرض صوره حسابك )
-Bprofile ( لازهار البروفايل حقك )
+Ravatar ( صوره الشخصيه )
+Rhelp ( عرض قائمه المساعده )
+Rcount ( لعرض عدد الاعضاء )
+Rid ( عرض معلومات الشخصيه )
+Rfm ( لعرض حالت الاعضاء )
+Rping ( لعرض سرعه النت تبعك )
+Ravatar ( لعرض صوره حسابك )
+Rprofile ( لازهار البروفايل حقك )
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
 • Staff - الاداره •
-Bban ( حظر الشخصيه )
-Bkick ( طرد الشخصيه )
-Bmute ( اسكات الشخصيه )
-Bunmute ( فك الاسكات من الشخصيه )
-Bclear ( مسح رسائل المخادثه )
-Bserver ( عرض معلومات السيرفر )
-Bmove ( سحب العضو لرومك الصوتي )
+Rban ( حظر الشخصيه )
+Rkick ( طرد الشخصيه )
+Rmute ( اسكات الشخصيه )
+Runmute ( فك الاسكات من الشخصيه )
+Rclear ( مسح رسائل المخادثه )
+Rserver ( عرض معلومات السيرفر )
+Rmove ( سحب العضو لرومك الصوتي )
 Bsetcount ( لصنع روم عدد الاعضاء )
-Bsetvoice ( لصنع روم عدد الاعضاء الي في الرومات )
-Bbc ( لارسال بردكاست بمنشن )
-Bbbc ( لارسال بردكاست بدون منشن )
-Bmc ( لقفل روم كتابه )
-Bumc ( لفتح روم كتابه )
-Bautorole ( لتفعيل الاوتو رول )
-Brole ( لاعطاء رتبه )
-Bclear ( لمسح لشات )
-Bclear <num> ( لمسح الشات بعدد )
+Rsetvoice ( لصنع روم عدد الاعضاء الي في الرومات )
+Rbc ( لارسال بردكاست بمنشن )
+Rbbc ( لارسال بردكاست بدون منشن )
+Rmc ( لقفل روم كتابه )
+Rumc ( لفتح روم كتابه )
+Rautorole ( لتفعيل الاوتو رول )
+Rrole ( لاعطاء رتبه )
+Rclear ( لمسح لشات )
+Rclear <num> ( لمسح الشات بعدد )
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
@@ -1508,7 +1508,7 @@ message.channel.sendFile(canvas.toBuffer())
 
 
 client.on('guildMemberAdd',async m => {
-m.addRole(m.guild.roles.find(r => r.name === ".Black,∝"));
+m.addRole(m.guild.roles.find(r => r.name === ".Rollet,∝"));
 });
 
         client.login(process.env.BOT_TOKEN);
